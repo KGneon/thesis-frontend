@@ -1,5 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Student } from '@app/entities/student';
 import { StudentService } from 'src/app/services/student.service';
 
@@ -8,7 +8,7 @@ import { StudentService } from 'src/app/services/student.service';
   templateUrl: './show-students.component.html',
   styleUrls: ['./show-students.component.css']
 })
-export class ShowStudentsComponent {
+export class ShowStudentsComponent implements OnInit {
   public students: Student[];
   
   constructor(private studentService: StudentService){}

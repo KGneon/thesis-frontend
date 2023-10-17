@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ShowThesesComponent } from './components/show-theses/show-theses.component';
 import { ShowPromotersComponent } from './components/show-promoters/show-promoters.component';
 import { ShowStudentsComponent } from './components/show-students/show-students.component';
+
 import { AddStudentComponent } from './components/add-student/add-student.component';
 import { AddPromoterComponent } from './components/add-promoter/add-promoter.component';
 import { AddThesisComponent } from './components/add-thesis/add-thesis.component';
