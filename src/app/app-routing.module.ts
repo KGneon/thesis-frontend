@@ -11,18 +11,18 @@ import { ShowPromotersComponent } from './components/show-promoters/show-promote
 import { ShowThesesComponent } from './components/show-theses/show-theses.component';
 
 const routes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: '**', component: NotFoundUserComponent},
-  {path: 'main-page', component: MainPageComponent},
-  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  // {path: 'login', component: LoginComponent},
+  // {path: '**', component: NotFoundUserComponent},
+  // {path: 'main-page', component: MainPageComponent},
+  // {path: '', redirectTo: '/login', pathMatch: 'full'},
 
-  {path: 'show-students', component: ShowStudentsComponent},
-  {path: 'show-theses', component: ShowThesesComponent},
-  {path: 'show-promoters', component: ShowPromotersComponent},
+  // {path: 'show-students', component: ShowStudentsComponent},
+  // {path: 'show-theses', component: ShowThesesComponent},
+  // {path: 'show-promoters', component: ShowPromotersComponent},
 
-  {path: 'add-student', component: AddStudentComponent},
-  {path: 'add-thesis', component: AddThesisComponent},
-  {path: 'add-promoter', component: AddPromoterComponent},
+  // {path: 'add-student', component: AddStudentComponent},
+  // {path: 'add-thesis', component: AddThesisComponent},
+  // {path: 'add-promoter', component: AddPromoterComponent},
 ];
 
 @NgModule({

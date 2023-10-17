@@ -1,4 +1,4 @@
-<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="container">
     <div class="container">
         <div class="row">
@@ -8,11 +8,11 @@
                         <table class="table user-list">
                             <thead>
                                 <tr>
-                                    <th><span>Name and Surname</span></th>
-                                    <th><span>Field</span></th>
-                                    <th class="text-center"><span>Status</span></th>
-                                    <th><span>Number of students leading</span></th>
-                                    <th>&nbsp;</th>
+                                    <th class="table-info"><span>Name and Surname</span></th>
+                                    <th class="table-info"><span>Field</span></th>
+                                    <th class="table-info"><span>Status</span></th>
+                                    <th class="table-info"><span>Number of students leading</span></th>
+                                    <th class="table-active">&nbsp;</th>
                                 </tr>
                             </thead>
                             <tbody *ngFor="let promoter of promoters">
@@ -23,7 +23,10 @@
                                         <span class="user-link">{{promoter.promoterSurname}}</span>
                                     </td>
                                     <td>
-                                        {{promoter.field}}
+                                        <span>{{promoter.field}}</span>
+                                    </td>
+                                    <td>
+                                        <span>{{promoter.numberOfStudentsLead}}</span>
                                     </td>
                                     <td class="text-center" *ngIf="availablePromoter">
                                         <ng-template>
@@ -31,9 +34,7 @@
                                             >Available for new thesis</span>
                                         </ng-template>
                                     </td>
-                                    <td>
-                                        <span>{{promoter.numberOfStudentsLead}}</span>
-                                    </td>
+                                    
                                     <td style="width: 20%;">
                                         <a href="#" class="table-link">
                                             <span class="fa-stack">
@@ -72,8 +73,4 @@
             </div>
         </div>
     </div>
-</div> -->
-
-<div *ngFor="let promoter of promoters">
-    <div>{{promoter.promoterName}}</div>
 </div>

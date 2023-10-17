@@ -1,7 +1,10 @@
+import { Promoter } from "./promoter";
+import { Thesis } from "./thesis";
+
 export interface Student {
     studentId: number;
     studentName: string;
     studentSurname: string;
-    thesisId: number;
-    promoterId: number;
+    thesis: Thesis;
+    promoter: Promoter;
 }

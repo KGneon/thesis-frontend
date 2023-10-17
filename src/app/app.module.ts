@@ -11,6 +11,7 @@ import { ShowStudentsComponent } from './components/show-students/show-students.
 import { AddStudentComponent } from './components/add-student/add-student.component';
 import { AddPromoterComponent } from './components/add-promoter/add-promoter.component';
 import { AddThesisComponent } from './components/add-thesis/add-thesis.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AddThesisComponent } from './components/add-thesis/add-thesis.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,4 +27,6 @@ export class StudentService {
   public deleteStudent(studentId : number): Observable<void> {
       return this.http.delete<void>(`${this.apiServerUrl}/api/students/delete/${studentId}`);
   }
+
+  //public createStudentWithDetails(student: Student): 
 }
